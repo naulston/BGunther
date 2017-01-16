@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>B Gunther : About Me</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
+    <!-- Font Awesome -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">    
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/> 
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css"/> 
+    <!-- Bootstrap progressbar  --> 
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-progressbar-3.3.4.css"/> 
+     <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+
+    <!-- Open Sans for body font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Lato for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body> 
+
+  <!-- BEGAIN PRELOADER -->
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  <!-- END PRELOADER -->
+
+  <!-- SCROLL TOP BUTTON -->
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+  <!-- Start header -->
+  <header id="header">
+    <!-- header top search -->
+    <div class="header-top">
+      <div class="container">
+        <form action="">
+          <div id="search">
+          <input type="text" placeholder="Type your search keyword here and hit Enter..." name="s" id="m_search" style="display: inline-block;">
+          <button type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+        </form>
+      </div>
+    </div>
+    <!-- header bottom -->
+    <!--<div class="header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="header-contact">
+              <ul>
+                <li>
+                  <div class="phone">
+                    <i class="fa fa-phone"></i>
+                    +1(800) 699-7071
+                  </div>
+                </li>
+                <li>
+                  <div class="mail">
+                    <i class="fa fa-envelope"></i>
+                    iam@domain.com
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="header-login">
+              <a class="login modal-form" data-target="#login-form" data-toggle="modal" href="#">Login / Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>-->
+  <!-- End header -->
+
+  <!-- Start login modal window -->
+  <div aria-hidden="false" role="dialog" tabindex="-1" id="login-form" class="modal leread-modal fade in">
+    <div class="modal-dialog">
+      <!-- Start login section -->
+      <div id="login-content" class="modal-content">
+        <div class="modal-header">
+          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title"><i class="fa fa-unlock-alt"></i>Login</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="User name" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+             <div class="loginbox">
+              <label><input type="checkbox"><span>Remember me</span></label>
+              <button class="btn signin-btn" type="button">SIGN IN</button>
+            </div>                    
+          </form>
+        </div>
+        <div class="modal-footer footer-box">
+          <a href="#">Forgot password ?</a>
+          <span>No account ? <a id="signup-btn" href="#">Sign Up.</a></span>            
+        </div>
+      </div>
+      <!-- Start signup section -->
+      <div id="signup-content" class="modal-content">
+        <div class="modal-header">
+          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title"><i class="fa fa-lock"></i>Sign Up</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input placeholder="Name" class="form-control">
+            </div>
+            <div class="form-group">
+              <input placeholder="Username" class="form-control">
+            </div>
+            <div class="form-group">
+              <input placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <div class="signupbox">
+              <span>Already got account? <a id="login-btn" href="#">Sign In.</a></span>
+            </div>
+            <div class="loginbox">
+              <label><input type="checkbox"><span>Remember me</span><i class="fa"></i></label>
+              <button class="btn signin-btn" type="button">SIGN UP</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End login modal window -->
+
+  <!-- BEGIN MENU -->
+  <section id="menu-area">      
+    <nav class="navbar navbar-default" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->              
+          <!-- TEXT BASED LOGO -->
+          <a class="navbar-brand" href="index.html">Barbara Gunther</a>              
+          <!-- IMG BASED LOGO  -->
+         <!-- <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo"></a> -->                    
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="feature.html">Feature</a></li>
+            <li class="active"><a href="service.html">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <!--<li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="blog-archive.html">Blog Archive</a></li>                
+                <li><a href="blog-single-with-left-sidebar.html">Blog Single with Left Sidebar</a></li>
+                <li><a href="blog-single-with-right-sidebar.html">Blog Single with Right Sidebar</a></li>
+                <li><a href="blog-single-with-out-sidebar.html">Blog Single with out Sidebar</a></li>           
+              </ul>
+            </li>-->
+            <!--<li><a href="404.html">404 Page</a></li>-->          
+            <li><a href="contact.html">Contact</a></li>
+          </ul>                     
+        </div><!--/.nav-collapse -->
+        <a href="#" id="search-icon">
+          <i class="fa fa-search">            
+          </i>
+        </a>
+      </div>     
+    </nav>
+  </section>
+  <!-- END MENU --> 
+  
+  <!-- Start single page header -->
+  <section id="single-page-header">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="single-page-header-left">
+              <h2>About Me</h2>
+              <p>Summary of decades of creating art</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="single-page-header-right">
+              <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="active">Service</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End single page header -->
+  
+  <!-- Start Service -->
+  <section id="service">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area">
+            <h2 class="title">
+              <a href="#exhibitions">Solo Exhibitions</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#group"> Group Exhibitions</a> 
+              <a class="button" href="#collections">Collections</a> <br> 
+              <a href="#education">Education</a> &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#teaching">Teaching</a> &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#bibliography">Bibliography</a>
+              <!--<a class="button" href="#group">Test</a>--></h2>
+            <span class="line"></span>
+            <p>There are many variations of passages of Lorem Ipsum available</p>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="service-content">
+            <div class="row">
+              
+        <!-- Start single service -->
+              <section id="exhibitions">
+              <div class="col-md-12 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-desktop service-icon"></i>
+                  <h4 class="service-title">Solo Exhibitions</h4>
+                  <p>2001 Inner/City, Triton Museum, Santa Clara, CA <br>2000 From Light to Dark to Light, Frederick Spratt Gallery, San Francisco, CA<br> <br> 
+                    1997  Barriers, Cabrillo College, Aptos, CA <br>1996  Broadway-Brooklyn Line, Frederick Spratt Gallery, San Jose, CA <br>1994 Nocturnes, Frederick Spratt Gallery, San Jose, CA <br>1993  New Paintings:  Citadel II, d.p. Fong & Spratt Galleries, San Jose, CA <br>1991 Journey--A Fifteen Year Retrospective, Eloise Pickard Smith Gallery, UC Santa Cruz <br> <br> 1989 India/China Series, d.p. Fong Galleries, San Jose, CA  
+Branner Spangenberg Gallery, Palo Alto, CA
+<br>1988  Stanford Law School, Stanford, CA  <br>1984 Complexities, Miriam Perlman, Inc., Chicago, IL <br>1981  Reflections, Palo Alto Cultural Center, Palo Alto, CA <br> <br> 1977  Lou Henry Hoover House, Stanford, CA <br>1976 Lou Henry Hoover House, Stanford, CA <br>1975 Introductions '75, Smith Andersen Gallery, Palo Alto, CA <br>1971 Los Robles Gallery, Palo Alto, CA 
+</p>
+                </div>
+              </div>
+<!-- End single service -->
+
+      <!-- Start single service -->
+              <section id="group">
+              <div class="col-md-12 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-rocket service-icon"></i>
+                  <h4 class="service-title">Group Exhibitions</h4>
+                  <p>2012 Every Expression is Justified, Thoreau Gallery,  San Francisco,CA  <br>2011     A Transcendent Land: Non-Traditional Landscapes, Triton Museum of Art, Santa Clara, CA <br>2011     From the Studio,  Menlo College,  Menlo Park, CA <br>2010  Printing from Perception, Abobe Art Center, Castro Valley, CA MMX, Institute of Contemporary Art, San Jose, CA 
+<br>2009  Statewide Drawing and Print Competition & Exhibition, Triton Museum of Art, Santa Clara, CA  <br>2008  Heritage Fine Arts Collaborative, San Jose, CA <br>2007 Landscapes: Rural and Urban Realities, Triton Museum of Art, Santa Clara, CA <br>2006 PrintmakersToday, Somarts Bay Gallery, San Francisco, CA
+Hilton Hotel, San Jose, Ca <br>2005  Shifting Perspectives, Triton Museum of Art, Santa Clara, CA <br>2004 Old Spaces/New Visions, Triton Museum of Art, Santa Clara, CA <br> <br>1996  Drawings:  Realism to Abstraction, Triton Museum of Art, Santa Clara, CA <br>1995 1994 dresden 1995 san jose, San Jose ICA, San Jose, CA  <br>1994  1994 dresden 1995 san jose, Galerie Adlergasse, Dresden, Germany
+Les Femmes, Linda Pope Gallery, Santa Cruz, CA
+<br>1993  Anita Shapolsky Gallery, New York, NY</p>
+                </div>
+              </div>
+              <!-- End single service -->
+
+              <!-- Start single service -->
+    <section id="collections">
+        <div class="col-md-12 col-sm-6">
+            <div class="single-service wow zoomIn">
+                  <i class="fa fa-paw service-icon"></i>
+                  <h4 class="service-title">Collections</h4>
+                  <p>Triton Museum, Santa Clara, CA <br>Museum of the City of New York San Jose, Art in Public Places at San Jose Hilton & Towers <br>General Motors <br>City of Palo Alto <br>Carson Inc., Chicago, IL <br>Harold Eriv, Foundation Press, Inc., Westbury, NY <br>Santa Clara University School of Law, Santa Clara, CA</p>
+                </div>
+              </div>
+              <!-- End single service -->
+
+              <!-- Start single service -->
+              <section id="education">
+              <div class="col-md-12 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-magic service-icon"></i>
+                  <h4 class="service-title">Education</h4>
+                  <p>Stanford University (Monotype study with Joe Zirker, 1987 and Nathan Oliveira, 1981) <br>Anderson Ranch Arts Center (Workshop with Jim Dine), Aspen, CO, 1983 <br>University of New Mexico, 1979 <br>MA, San Jose State University, San Jose, CA, 1975 <br>Boston Museum School of Fine Arts, 1972-73 BA, Brooklyn College (City University of New York) <br>High School of Music and Art, New York City</p>
+                </div>
+              </div>
+              <!-- End single service -->
+
+          <!-- Start single service -->
+              <secion id="teaching">
+              <div class="col-md-12 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-shopping-cart service-icon"></i>
+                  <h4 class="service-title">Teaching</h4>
+                  <p>1976-1994 Cabrillo College, Aptos, CA <br>1978 California State University, Hayward, CA Spring 1976, Summers 1977, 1978, 1980 San Jose State University, San Jose, CA
+<br>1996-2001, 2003-2006 Facilitator, MonotypeMarathon, Institute of Contemporary Art, San Jose, CA
+</p>
+                </div>
+              </div>
+              <!-- End single service -->
+
+        <!-- Start single service -->
+              <section id="bibliography">
+              <div class="col-md-12 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-mobile service-icon"></i>
+                  <h4 class="service-title">Bibliography</h4>
+                  <p>Reed Magazine, Illustration, 2003
+<br>Inner/City catalogue, Triton Museum, 2001 from Light to Dark to Light catalogue, Frederick Spratt Gallery, 2000 <br>Trip to Brooklyn Triggers Old Memories, New Images,  Laura J. Tuchman, San Jose Mercury News, February 9, 1996 Review, Laura Tuchman, Visions Art Quarterly, 1993 <br>Industrial Impressionism; Clarissa J. Welsh, Artweek, May 20, 1993 <br>An Artist's Nature; Laura Tuchman, San Jose Mercury News, May 16, 1993 <br>The Orderly, the Ugly, the Energetic; Catherine Maclay, San Jose Mercury News, April 30, 1993
+At Play in the Print Shop:  Monotypists Do It in Reverse, Stephen Wiltse, Santa Cruz Sentinel, April 5, 1991
+A Citadel With a View; Patricia Albers, Metro, October 12-18, 1990 <br>30 by Fifteen (catalogue), Judah L. Magnes Museum, 1979 <br>Aesthetics of Graffiti, Rolando Castellon, 1978 <br>Word Works Two, Jessie Jacobs, 1975 Monotypes, Syntex, Jane Ayres, Peninsula Times Tribune, April 12, 1990 <br>The 'Almost Architectural' Art of Barbara Gunther, Jennifer Scott, TAB Magazine, January 18, 1990 </p>
+                </div>
+              </div>
+              
+                <!-- Start single service -->
+              <!--<div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-desktop service-icon"></i>
+                  <h4 class="service-title">Web Development</h4>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                </div>
+              </div>-->
+              <!-- End single service -->
+              <!-- Start single service -->
+              <!--<div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-paw service-icon"></i>
+                  <h4 class="service-title">Digital Design</h4>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                </div>
+              </div>-->
+              <!-- End single service -->
+              <!-- Start single service -->
+              <!--<div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-magic service-icon"></i>
+                  <h4 class="service-title">Marketing</h4>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                </div>
+              </div>-->
+              <!-- End single service -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service -->
+
+  <!-- Start subscribe us -->
+  <!--<section id="subscribe">
+    <div class="subscribe-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="subscribe-area">
+              <h2 class="wow fadeInUp">Subscribe Newsletter</h2>
+              <form action="" class="subscrib-form wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                <input type="text" placeholder="Enter Your E-mail..">
+                <button class="subscribe-btn" type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>-->
+  <!-- End subscribe us -->
+
+  <!-- Start footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <!--<div class="footer-left">
+            <p>Designed by <a href="http://www.markups.io/">MarkUps.io</a></p>
+          </div>-->
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="footer-right">
+            <a href="index.html"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer -->
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="assets/js/bootstrap.js"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="assets/js/slick.js"></script>    
+  <!-- mixit slider -->
+  <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+ <!-- counter -->
+  <script src="assets/js/waypoints.js"></script>
+  <script src="assets/js/jquery.counterup.js"></script>
+  <!-- Wow animation -->
+  <script type="text/javascript" src="assets/js/wow.js"></script> 
+  <!-- progress bar   -->
+  <script type="text/javascript" src="assets/js/bootstrap-progressbar.js"></script>  
+  
+ 
+  <!-- Custom js -->
+  <script type="text/javascript" src="assets/js/custom.js"></script>
+    
+  </body>
+</html>
